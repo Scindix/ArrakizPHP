@@ -1,0 +1,121 @@
+
+body {
+    font-family: Ubuntu,sans-serif;
+    font-weight: 200;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+input[type="submit"]:active {
+    background: -moz-linear-gradient(center top , #2D5988 0%, #3F98DF 100%) repeat scroll 0 0 transparent;
+}
+input[type="submit"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(center top , #3F98DF 0%, #2D5988 100%) repeat scroll 0 0 transparent;
+    border-color: #AFEFFF -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-bottom: 20px;
+    outline: medium none;
+    padding: 5px 10px;
+}
+#formUploadPackage {
+    background: none repeat scroll 0 0 #F0F0FA;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 20px;
+    display: inline-block;
+    margin-top: 80px;
+    overflow: hidden;
+    width: 558px;
+}
+#inputs {
+    background: none repeat scroll 0 0 #F0F0FA;
+    padding: 20px;
+    text-align: right;
+}
+#inputs label {
+    margin-right: 20px;
+}
+#inputs input:focus {
+    box-shadow: 0 0 5px #64C8FF;
+}
+#inputs input {
+    border: 1px solid lightGrey;
+    border-radius: 5px 5px 5px 5px;
+    height: 25px;
+    padding: 0 2px;
+    transition: all 0.2s ease-in 0s;
+    width: 100%;
+}
+#title {
+    background: none repeat scroll 0 0 white;
+    font-size: 200%;
+    margin-top: 20px;
+}
+#short {
+    background: none repeat scroll 0 0 white;
+    font-style: italic;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+#bodyContainer {
+    background: none repeat scroll 0 0 lightGrey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    display: inline-block;
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    text-align: left;
+    width: 1200px;
+}
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#description {
+    display: inline-block;
+    width: 600px;
+}
+#rightContainer {
+    display: inline-block;
+}
+#sideNote {
+    display: block;
+    height: 48px;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+#download {
+    border-radius: 3px 3px 3px 3px;
+    color: grey;
+    display: inline-block;
+    margin-right: 12px;
+    margin-top: 3px;
+    outline: medium none;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-shadow: 1px 1px white;
+}
+#download:active {
+    color: black;
+}
+#download:hover {
+    background: none repeat scroll 0 0 lightGrey;
+}
+#filesize {
+    font-size: 12px;
+}
+

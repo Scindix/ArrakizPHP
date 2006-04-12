@@ -1,0 +1,48 @@
+<?php
+require_once("settings.php");
+require_once("./class/image.class.php");
+if(!isset($_GET["type"])||$_GET["type"]=="")
+{
+	Img::loadImg($_GET["img"]);
+	Img::returnImg();
+}
+if($_GET["type"]=="img_crop_dynamic_x")
+{
+	Img::loadImg($_GET["img"]);
+	Img::ratioScaleX($_GET["dim"]);
+	Img::returnImg();
+}
+if($_GET["type"]=="img_crop_dynamic_y")
+{
+	Img::loadImg($_GET["img"]);
+	Img::ratioScaleY($_GET["dim"]);
+	Img::returnImg();
+}
+if($_GET["type"]=="img_crop_fixed_x")
+{
+	Img::loadImg($_GET["img"]);
+	Img::ratioScaleX($_GET["dim"]);
+	Img::cutY($_GET["dim"]);
+	Img::returnImg();
+}
+if($_GET["type"]=="img_crop_fixed_y")
+{
+	Img::loadImg($_GET["img"]);
+	Img::ratioScaleY($_GET["dim"]);
+	Img::cutX($_GET["dim"]);
+	Img::returnImg();
+}
+if($_GET["type"]=="img_map_x_y")
+{
+	Img::loadImg($_GET["img"]);
+	Img::map($_GET["base"], $_GET["num"]);
+	Img::returnImg();
+}
+if($_GET["type"]=="css")
+{
+	header("Content-Type: image/png");
+	echo file_get_contents($Settings['MyDir']."/css/img/".$_GET["img"]);
+	//Img::loadImg($Settings['MyDir']."/css/img/".$_GET["img"]);
+	//Img::returnImg();
+}
+?>
